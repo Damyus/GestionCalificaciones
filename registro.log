@@ -1,0 +1,2 @@
+[27/10/2026 17:20:43] ERROR: Error al cargar datos: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Error calling Driver#connect [null]
+[27/10/2026 17:21:55] INFO: Promedio calculado de Ana Montenegro: 5.0

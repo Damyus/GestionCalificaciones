@@ -1,0 +1,193 @@
+/* Estilo "libreta escolar": pizarron arriba, la tabla como hoja de cuaderno
+   y los avisos como un post-it */
+
+.root {
+    -fx-font-family: "Segoe UI", "Verdana", sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #e3e7e1;
+    -fx-text-fill: #2b2b2b;
+}
+
+/* ---------- pizarron ---------- */
+.encabezado {
+    -fx-background-color: #2f4a3a;
+    -fx-padding: 14 22 16 22;
+    -fx-border-color: transparent transparent #8a6a46 transparent;
+    -fx-border-width: 0 0 6 0; /* el marco de madera del pizarron */
+}
+
+.titulo {
+    -fx-text-fill: #f2f2ea;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.subtitulo-encabezado {
+    -fx-text-fill: #b7c9bc;
+    -fx-font-size: 13px;
+}
+
+/* ---------- paneles ---------- */
+.panel {
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+    -fx-border-color: #c3ccc4;
+    -fx-border-radius: 6;
+    -fx-padding: 16;
+}
+
+.seccion {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f4a3a;
+}
+
+.ayuda {
+    -fx-text-fill: #6b736c;
+    -fx-font-size: 12px;
+}
+
+.promedio {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2f4a3a;
+}
+
+/* ---------- botones ---------- */
+.boton, .boton-secundario, .boton-borrar {
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-padding: 7 12;
+    -fx-cursor: hand;
+}
+
+.boton {
+    -fx-background-color: #2f4a3a;
+    -fx-text-fill: white;
+}
+
+.boton:hover {
+    -fx-background-color: #3f6150;
+}
+
+.boton-secundario {
+    -fx-background-color: white;
+    -fx-border-color: #2f4a3a;
+    -fx-text-fill: #2f4a3a;
+}
+
+.boton-secundario:hover {
+    -fx-background-color: #eef2ee;
+}
+
+.boton-borrar {
+    -fx-background-color: white;
+    -fx-border-color: #c8553d;
+    -fx-text-fill: #c8553d;
+}
+
+.boton-borrar:hover {
+    -fx-background-color: #fbeeea;
+}
+
+.boton-link {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2f4a3a;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+
+/* ---------- tabla como hoja de cuaderno ---------- */
+.tabla-cuaderno {
+    -fx-background-color: white;
+    -fx-border-color: #c3ccc4;
+}
+
+.tabla-cuaderno .column-header-background {
+    -fx-background-color: white;
+}
+
+.tabla-cuaderno .column-header {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #2f4a3a transparent;
+    -fx-border-width: 0 0 2 0;
+}
+
+.tabla-cuaderno .column-header .label {
+    -fx-text-fill: #2f4a3a;
+    -fx-font-weight: bold;
+}
+
+/* los renglones celestes */
+.tabla-cuaderno .table-row-cell {
+    -fx-background-color: #bcd3ee, white;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-cell-size: 30px;
+}
+
+/* fila elegida = pintada con resaltador */
+.tabla-cuaderno .table-row-cell:selected {
+    -fx-background-color: #bcd3ee, #fff3a1;
+}
+
+.tabla-cuaderno .table-row-cell:selected .table-cell {
+    -fx-text-fill: #2b2b2b;
+}
+
+.tabla-cuaderno .table-cell {
+    -fx-border-color: transparent;
+    -fx-text-fill: #2b2b2b;
+}
+
+/* el margen rojo de la hoja */
+.tabla-cuaderno .table-cell.col-margen {
+    -fx-border-color: transparent #e06b6b transparent transparent;
+    -fx-border-width: 0 2 0 0;
+    -fx-alignment: center;
+}
+
+/* ---------- grafico ---------- */
+.chart-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f4a3a;
+}
+
+.chart-plot-background {
+    -fx-background-color: white;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: #e4e8e4;
+}
+
+.axis {
+    -fx-tick-label-font-size: 12px;
+    -fx-tick-label-fill: #444;
+}
+
+.numero-barra {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 3 0 0 0;
+}
+
+.aprobado {
+    -fx-background-color: #4f8a5f;
+}
+
+.desaprobado {
+    -fx-background-color: #c8553d;
+}
+
+/* ---------- post-it ---------- */
+.postit {
+    -fx-background-color: #fff3a1;
+    -fx-padding: 10 18;
+    -fx-font-size: 14px;
+    -fx-text-fill: #3a3a3a;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 6, 0, 2, 3);
+}
